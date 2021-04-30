@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainScreen extends AppCompatActivity {
+import com.example.tukaevprobnik.databinding.ActivityMainBinding;
+import com.example.tukaevprobnik.databinding.ActivitySignInScreenBinding;
 
+public class MainScreen extends AppCompatActivity {
+    ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen);
+        binding= ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }
