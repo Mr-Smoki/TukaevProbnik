@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 
 public class CheckData {
+    public static long token;
     public static boolean checkMail(String mail)
     {
         return mail.matches("[a-z0-9]+@[a-z0-9]+.[a-z]{1,3}");
